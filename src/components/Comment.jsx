@@ -39,6 +39,7 @@ export const Comment = ({
       {/* map-loop render Reply component here */}
       {replies.map((rep) => (
         <Reply
+          key={rep.username}
           userImagePath={rep.userImagePath}
           username={rep.username}
           replyText={rep.replyText}
